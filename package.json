@@ -1,0 +1,15 @@
+{
+	"name": "ksp-mapgen-cli",
+	"version": "0.0.1",
+	"bin": {
+		"mapgen": "cli.js"
+	},
+	"repository": "https://github.com/romw314/KSP-1-1-41-5-mapgen-cli",
+	"author": "romw314",
+	"license": "UNLICENSED",
+	"private": false,
+	"dependencies": {
+		"ksp-mapgen": "0.0.2",
+		"prompts": "^2.4.2"
+	}
+}
