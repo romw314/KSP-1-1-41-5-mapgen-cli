@@ -8,8 +8,20 @@
 	"author": "romw314",
 	"license": "UNLICENSED",
 	"private": false,
+	"scripts": {
+		"build": "node build.js",
+		"prepack": "yarn build && clean-package",
+		"postpack": "clean-package restore"
+	},
+	"clean-package": {
+		"indent": 2
+	},
 	"dependencies": {
 		"ksp-mapgen": "0.0.2",
 		"prompts": "^2.4.2"
+	},
+	"devDependencies": {
+		"clean-package": "^2.2.0",
+		"terser": "^5.22.0"
 	}
 }
